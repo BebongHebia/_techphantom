@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessOwnerProfile">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView70"
+                android:layout_width="111dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_name" />
+
+            <ImageView
+                android:id="@+id/businessLogo_IV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:onClick="chooseImage"
+                app:layout_constraintStart_toStartOf="@+id/imageView70"
+                app:layout_constraintTop_toBottomOf="@+id/imageView70"
+                app:srcCompat="@drawable/companypicturenotavailable" />
+
+            <TextView
+                android:id="@+id/businessOwnerProfile_BusinessName_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Company Owner Here"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/businessLogo_IV"
+                app:layout_constraintStart_toEndOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toTopOf="@+id/businessLogo_IV" />
+
+            <TextView
+                android:id="@+id/textView156"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap Logo Icon To Change Business Logo"
+                app:layout_constraintBottom_toTopOf="@+id/businessLogo_IV"
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV" />
+
+            <TextView
+                android:id="@+id/textView157"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Business Name"
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toBottomOf="@+id/businessLogo_IV" />
+
+            <TextView
+                android:id="@+id/textView158"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hotline/Contact No."
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerProfile_BusinessName_ET" />
+
+            <TextView
+                android:id="@+id/textView159"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Address : "
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerProfile_Contact_ET" />
+
+            <TextView
+                android:id="@+id/textView160"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email :"
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerProfile_Address_ET" />
+
+            <TextView
+                android:id="@+id/textView161"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="DTI No."
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerProfile_Email_ET" />
+
+            <TextView
+                android:id="@+id/textView162"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mayor's Permit No."
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerProfile_DTINo_ET" />
+
+            <TextView
+                android:id="@+id/textView163"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="BIR Permit No."
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerProfile_MayorPermitNo_ET" />
+
+            <TextView
+                android:id="@+id/textView164"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="PhilGeps Permit No."
+                app:layout_constraintStart_toStartOf="@+id/businessLogo_IV"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerProfile_BIRPermitNo_ET" />
+
+            <EditText
+                android:id="@+id/businessOwnerProfile_BusinessName_ET"
+                android:layout_width="357dp"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:textSize="14dp"
+                android:inputType="textPersonName"
+                android:hint="Business Name"
+                android:paddingLeft="10dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintStart_toStartOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView157" />
+
+            <EditText
+                android:id="@+id/businessOwnerProfile_Contact_ET"
+                android:layout_width="357dp"
+                android:layout_height="35dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Hotline/Contact No."
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView158" />
+
+            <EditText
+                android:id="@+id/businessOwnerProfile_Address_ET"
+                android:layout_width="357dp"
+                android:layout_height="35dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView159" />
+
+            <EditText
+                android:id="@+id/businessOwnerProfile_Email_ET"
+                android:layout_width="357dp"
+                android:layout_height="35dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView160" />
+
+            <EditText
+                android:id="@+id/businessOwnerProfile_DTINo_ET"
+                android:layout_width="357dp"
+                android:layout_height="35dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="DTI No."
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+            <EditText
+                android:id="@+id/businessOwnerProfile_MayorPermitNo_ET"
+                android:layout_width="357dp"
+                android:layout_height="35dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Mayors Permi No."
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView162" />
+
+            <EditText
+                android:id="@+id/businessOwnerProfile_BIRPermitNo_ET"
+                android:layout_width="357dp"
+                android:layout_height="35dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="BIR Permit No."
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView163" />
+
+            <EditText
+                android:id="@+id/businessOwnerProfile_PhilGepsPermitNo_ET3"
+                android:layout_width="357dp"
+                android:layout_height="35dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="PhilGeps Permit No."
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView164" />
+
+            <Button
+                android:id="@+id/updateBusinessProfileButton"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="750dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="Save Changes"
+                android:backgroundTint="@color/primary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

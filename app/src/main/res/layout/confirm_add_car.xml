@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmAddCar">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="101dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_name" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Confirmation for Adding Car"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Car Model Name: "
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_CarName_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Car Name"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_CarPrice_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Car Price"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_CarCapacity_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Car Capacity"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName3" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_CarEngine_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Car Engine"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName4" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_CarDoors_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Car Doors"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName5" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_CompanyName_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Company Name"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName6" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_CompanyID_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Company ID"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName7" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_GasType_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Company ID"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName8" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_PlateNumber_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Company ID"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmAddCar_CarModelName9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmAddCar_CarModelName9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Car Rent Price :"
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Car Capacity : "
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName2"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName2" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Car Engine : "
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName3"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName3" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Car Doors : "
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName4"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName4" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Company Name : "
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName5"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName5" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Company ID : "
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName6"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName6" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Car Gas Type : "
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName7"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName7" />
+
+            <TextView
+                android:id="@+id/confirmAddCar_CarModelName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Car Plate No. :"
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName8"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName8" />
+
+            <Button
+                android:id="@+id/confirmAddingCar_addNowButton"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1050dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/primary_color"
+                android:text="Add Car"
+
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Car Type :"
+                android:textColor="#000"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_CarType_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Car Type"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView46"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView46"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView142"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Driver Details"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/confirmAddCar_CarModelName9"
+                app:layout_constraintTop_toBottomOf="@+id/confirmAddCar_CarModelName9" />
+
+            <TextView
+                android:id="@+id/textView143"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Driver Name : "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/textView142"
+                app:layout_constraintTop_toBottomOf="@+id/textView142" />
+
+            <TextView
+                android:id="@+id/textView144"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Driver Address : "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/textView143"
+                app:layout_constraintTop_toBottomOf="@+id/textView143" />
+
+            <TextView
+                android:id="@+id/textView145"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Driver Contact : "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/textView144"
+                app:layout_constraintTop_toBottomOf="@+id/textView144" />
+
+            <TextView
+                android:id="@+id/textView146"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Driver License No. : "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/textView145"
+                app:layout_constraintTop_toBottomOf="@+id/textView145" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_DriverName_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="driver Name"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView143"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView143" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_DriverAddress_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="driver Name"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView144"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView144"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_DriverContact_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:text="driver Name"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView145"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView145"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/confirmAddingCar_DriverLicenseNo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="driver Name"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView146"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView146" />
+
+            <TextView
+                android:id="@+id/textView155"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Tap Icon to Select Logo"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="@+id/confirmAddingCar_DriverLicenseNo_TV"
+                app:layout_constraintStart_toStartOf="@+id/textView146"
+                app:layout_constraintTop_toBottomOf="@+id/textView146" />
+
+            <ImageView
+                android:id="@+id/confirmAddCar_CarPhoto_IV"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                android:onClick="chooseImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView155"
+                app:srcCompat="@drawable/carphotonotavailable" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

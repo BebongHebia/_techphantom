@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_background_theme_neutralizer"
+    tools:context=".DeleteCars">
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="96dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_name" />
+
+    <TextView
+        android:id="@+id/paymentOptionCarName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Car Name : Undefined"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView33"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+    <TextView
+        android:id="@+id/paymentOptionCarPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Car Price : Undefined"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/paymentOptionCarName"
+        app:layout_constraintTop_toBottomOf="@+id/paymentOptionCarName" />
+
+    <TextView
+        android:id="@+id/paymentOption_DriverAccommodation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Driver Accommodation : TBA"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/paymentOptionCarPrice"
+        app:layout_constraintTop_toBottomOf="@+id/paymentOptionCarPrice" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="MODE OF PAYMENT"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/paymentOption_withDriver_Button"
+        app:layout_constraintTop_toBottomOf="@+id/paymentOption_withDriver_Button" />
+
+
+    <RadioGroup
+        android:id="@+id/radio_group_payment_mode"
+        android:layout_width="338dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="10dp"
+        android:layout_x="0dp"
+        android:layout_y="335dp"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/textView55"
+        app:layout_constraintTop_toBottomOf="@+id/textView55">
+
+        <RadioButton
+            android:id="@+id/payViaCounterRadioButton"
+            android:layout_width="309dp"
+            android:layout_height="58dp"
+            android:text="Pay Via Counter +P500 fee Change your booking at anytime"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <RadioButton
+            android:id="@+id/payViaCreditRadioButton"
+            android:layout_width="308dp"
+            android:layout_height="68dp"
+            android:text="Pay Online Down payment / Full Payment, Pay now and Save Money"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.641" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="316dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFF54242"
+        android:text="Continue"
+        android:textColor="#fff"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/radio_group_payment_mode"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="@+id/radio_group_payment_mode"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_payment_mode" />
+
+    <TextView
+        android:id="@+id/textView126"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Select Driver Accommodation"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/paymentOptionCarPrice"
+        app:layout_constraintTop_toBottomOf="@+id/paymentOptionCarPrice" />
+
+    <Button
+        android:id="@+id/paymentOption_withDriver_Button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/approved_color"
+        android:text="With Driver"
+        app:layout_constraintStart_toStartOf="@+id/textView126"
+        app:layout_constraintTop_toBottomOf="@+id/textView126" />
+
+    <Button
+        android:id="@+id/paymentOption_withoutDriver_Button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Self Drive"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/paymentOption_withDriver_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paymentOption_withDriver_Button"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

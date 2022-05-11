@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_background_theme_neutralizer"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/cars_displayed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slideShow" />
+
+            <TextView
+                android:id="@+id/changeableBooking"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="28dp"
+                android:text="You have no Current Booking"
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clientDashboard_clientName_textview" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profilephotonotavailable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/clientDashboard_clientName_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="First Name Last Name"
+                android:textColor="#000"
+                android:textSize="21dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                app:layout_constraintStart_toEndOf="@+id/imageView18"
+                app:layout_constraintTop_toTopOf="@+id/imageView18"
+                app:layout_constraintVertical_bias="0.483" />
+
+            <Button
+                android:id="@+id/clientDashboard_EditProfile_Button"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/primary_color"
+                android:text="Edit Profile"
+                android:textColor="#fff"
+                app:layout_constraintStart_toStartOf="@+id/imageView18"
+                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+            <Button
+                android:id="@+id/clientDashboard_CheckBooking_Button"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/primary_color"
+                android:text="My Booking"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/changeableBooking"
+                app:layout_constraintTop_toBottomOf="@+id/changeableBooking" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/package_and_promos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewClientDashboard" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="98dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/promo1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="98dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/promo3"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="98dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/promo2"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/fragmentBackToHome_BTN"
+                android:layout_width="271dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="700dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#f54242"
+                android:text="Show more Cars"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewClientDashboard"
+                android:layout_width="402dp"
+                android:layout_height="456dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="21dp"
+                android:paddingTop="?attr/actionBarSize"
+                app:layout_constraintBottom_toTopOf="@+id/fragmentBackToHome_BTN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                app:layout_constraintVertical_bias="0.0">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/slideShow"
+                android:layout_width="375dp"
+                android:layout_height="218dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/cardview_style"
+                android:padding="10dp"
+                android:src="@drawable/anim_slideshow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView67" />
+
+            <ImageView
+                android:id="@+id/imageView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/places_you_can_visit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clientDashboard_CheckBooking_Button" />
+
+            <Button
+                android:id="@+id/clientDashboardPlacesToVisit_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Browse Places"
+                android:backgroundTint="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="@+id/slideShow"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="@+id/slideShow"
+                app:layout_constraintTop_toBottomOf="@+id/slideShow" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/notificationFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/framelayout_modal"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="333dp"
+                android:layout_height="246dp"
+                android:layout_marginTop="200dp"
+                android:background="#fff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/textView120"
+                        android:layout_width="322dp"
+                        android:layout_height="78dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="30dp"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Your Renting Days Has Expire, Please Settle Your Booking or Return Car within 12Hrs."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/finishNotificationButton"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Close"
+                        android:backgroundTint="@color/approved_color"
+                        app:layout_constraintEnd_toEndOf="@+id/textView120"
+                        app:layout_constraintStart_toStartOf="@+id/textView120"
+                        app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

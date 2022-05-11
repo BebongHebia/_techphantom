@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfilePage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/viewCarDetails_ProceedButton"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="600dp"
+                android:text="Save Changes"
+                android:backgroundTint="@color/primary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/editProfile_profileLogo"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="48dp"
+                android:onClick="chooseProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profilephotonotavailable" />
+
+            <TextView
+                android:id="@+id/editPage_fullname_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Full Name"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editProfile_profileLogo"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="@+id/editProfile_profileLogo"
+                app:layout_constraintTop_toBottomOf="@+id/editProfile_profileLogo" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:text="Edit First Name"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPage_fullname_textView" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Edit Last Name"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/editPage_EditFirstName_EditText"
+                app:layout_constraintTop_toBottomOf="@+id/editPage_EditFirstName_EditText" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Edit Email"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/editPage_EditLastName_EditText"
+                app:layout_constraintTop_toBottomOf="@+id/editPage_EditLastName_EditText" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mobile Number"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/editPage_EditEmail_EditText"
+                app:layout_constraintTop_toBottomOf="@+id/editPage_EditEmail_EditText" />
+
+            <EditText
+                android:id="@+id/editPage_EditFirstName_EditText"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <EditText
+                android:id="@+id/editPage_EditLastName_EditText"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <EditText
+                android:id="@+id/editPage_EditEmail_EditText"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <EditText
+                android:id="@+id/editPage_EditMobileNumber_EditText"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <Button
+                android:id="@+id/editPage_EditPassword_Button"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Change Password"
+                android:backgroundTint="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="@+id/editPage_EditMobileNumber_EditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editPage_EditMobileNumber_EditText"
+                app:layout_constraintTop_toBottomOf="@+id/editPage_EditMobileNumber_EditText" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Tap Icon to Change Profile Photo"
+                app:layout_constraintEnd_toEndOf="@+id/editProfile_profileLogo"
+                app:layout_constraintStart_toStartOf="@+id/editProfile_profileLogo"
+                app:layout_constraintTop_toBottomOf="@+id/editProfile_profileLogo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

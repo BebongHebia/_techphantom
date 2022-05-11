@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewReportDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView72"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_name" />
+
+            <TextView
+                android:id="@+id/textView171"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:text="Reports Details"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView72" />
+
+            <TextView
+                android:id="@+id/textView172"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Booking ID : "
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView72"
+                app:layout_constraintTop_toBottomOf="@+id/textView171" />
+
+            <TextView
+                android:id="@+id/reportsBookingID_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Booking ID : "
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView172"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView172" />
+
+            <TextView
+                android:id="@+id/textView174"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Booker Full Name : "
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView72"
+                app:layout_constraintTop_toBottomOf="@+id/textView172" />
+
+            <TextView
+                android:id="@+id/reportsFullName_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Booker Full Name : "
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView174"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView174" />
+
+            <TextView
+                android:id="@+id/textView176"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Booker Address"
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView174" />
+
+            <TextView
+                android:id="@+id/textView178"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Booker Age : "
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/reportsBookerAddress_TV" />
+
+            <TextView
+                android:id="@+id/reportsBookerAge_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Booker Age : "
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView178"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView178" />
+
+            <TextView
+                android:id="@+id/textView179"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Booker Email : "
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView178" />
+
+            <TextView
+                android:id="@+id/reportsBookerEmail_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Booker Email : "
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView179"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView179" />
+
+            <TextView
+                android:id="@+id/textView180"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Booker Phone Number : "
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView179" />
+
+            <TextView
+                android:id="@+id/reportsBookerPhoneNumber_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booker Phone Number : "
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView180" />
+
+            <TextView
+                android:id="@+id/textView182"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Model of the car booked : "
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView180" />
+
+            <TextView
+                android:id="@+id/reportsCarModel_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model of the car booked : "
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView182" />
+
+            <TextView
+                android:id="@+id/textView184"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Payment Method : "
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/reportsCarModel_TV" />
+
+            <TextView
+                android:id="@+id/reportsPaymentMethod_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Payment Method : "
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView184"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView184" />
+
+            <TextView
+                android:id="@+id/textView185"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Date Booked : "
+                android:textColor="#000"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView184" />
+
+            <TextView
+                android:id="@+id/reportsDateBooked_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Booked : "
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView185" />
+
+            <TextView
+                android:id="@+id/reportsBookerAddress_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booker Address"
+                android:textColor="@color/primary_color"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView176" />
+
+            <Button
+                android:id="@+id/reportsBackButton"
+                android:layout_width="357dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Back"
+                android:backgroundTint="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reportsDateBooked_TV" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

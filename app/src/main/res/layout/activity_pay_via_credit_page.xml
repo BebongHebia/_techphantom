@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_background_theme_neutralizer"
+    tools:context=".PayViaCreditPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="103dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_name" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="71dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Car Name :"
+                android:textColor="#000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+            <TextView
+                android:id="@+id/payViaCreditCarNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:text="Car Name :"
+                android:textColor="#000"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView48"
+                app:layout_constraintStart_toEndOf="@+id/textView48"
+                app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Car Rates Per Hour : "
+                android:textColor="#000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView48"
+                app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+            <TextView
+                android:id="@+id/payViaCreditCarPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Car Price :"
+                android:textColor="#000"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView49"
+                app:layout_constraintStart_toEndOf="@+id/textView49"
+                app:layout_constraintTop_toTopOf="@+id/textView49" />
+
+            <EditText
+                android:id="@+id/payViaCreditAddress"
+                android:layout_width="370dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/payViaCreditPhoneNumber"
+                app:layout_constraintTop_toBottomOf="@+id/payViaCreditPhoneNumber" />
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Driver Details"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView49"
+                app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Trip Date"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/payViaCreditAddress"
+                app:layout_constraintTop_toBottomOf="@+id/payViaCreditAddress" />
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="44dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="40dp"
+                android:text="From"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/textView91"
+                app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+            <TextView
+                android:id="@+id/textView86"
+                android:layout_width="44dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="20dp"
+                android:text="To"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/spinnerPayViaCreditTripDateFromMonth"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerPayViaCreditTripDateFromMonth" />
+
+            <EditText
+                android:id="@+id/payViaCreditFirstName"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintStart_toStartOf="@+id/textView84"
+                app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+            <EditText
+                android:id="@+id/payViaCreditPhoneNumber"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintStart_toStartOf="@+id/payViaCreditEmail"
+                app:layout_constraintTop_toBottomOf="@+id/payViaCreditEmail" />
+
+            <EditText
+                android:id="@+id/payViaCreditAge"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/payViaCreditPhoneNumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/payViaCreditPhoneNumber"
+                app:layout_constraintTop_toTopOf="@+id/payViaCreditPhoneNumber" />
+
+            <EditText
+                android:id="@+id/payViaCreditEmail"
+                android:layout_width="370dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/payViaCreditLastName"
+                app:layout_constraintStart_toStartOf="@+id/payViaCreditFirstName"
+                app:layout_constraintTop_toBottomOf="@+id/payViaCreditFirstName" />
+
+            <EditText
+                android:id="@+id/payViaCreditLastName"
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/payViaCreditFirstName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/payViaCreditFirstName"
+                app:layout_constraintTop_toTopOf="@+id/payViaCreditFirstName" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripDateFromYear"
+                android:layout_width="102dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintBottom_toBottomOf="@+id/spinnerPayViaCreditTripDateFromDay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/spinnerPayViaCreditTripDateFromDay"
+                app:layout_constraintTop_toTopOf="@+id/spinnerPayViaCreditTripDateFromDay" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripDateFromMonth"
+                android:layout_width="139dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintStart_toStartOf="@+id/textView85"
+                app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripDateToMonth"
+                android:layout_width="142dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintStart_toStartOf="@+id/textView86"
+                app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripRegions_spinner"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintStart_toStartOf="@+id/textView132"
+                app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripProvince_spinner"
+                android:layout_width="125dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintBottom_toBottomOf="@+id/spinnerPayViaCreditTripRegions_spinner"
+                app:layout_constraintStart_toEndOf="@+id/spinnerPayViaCreditTripRegions_spinner"
+                app:layout_constraintTop_toTopOf="@+id/spinnerPayViaCreditTripRegions_spinner" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripMunicipality_spinner"
+                android:layout_width="125dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="140dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintBottom_toBottomOf="@+id/spinnerPayViaCreditTripRegions_spinner"
+                app:layout_constraintStart_toEndOf="@+id/spinnerPayViaCreditTripRegions_spinner"
+                app:layout_constraintTop_toTopOf="@+id/spinnerPayViaCreditTripRegions_spinner"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripDateToDay"
+                android:layout_width="102dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintBottom_toBottomOf="@+id/spinnerPayViaCreditTripDateToMonth"
+                app:layout_constraintStart_toEndOf="@+id/spinnerPayViaCreditTripDateToMonth"
+                app:layout_constraintTop_toTopOf="@+id/spinnerPayViaCreditTripDateToMonth" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripDateFromDay"
+                android:layout_width="102dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintBottom_toBottomOf="@+id/spinnerPayViaCreditTripDateFromMonth"
+                app:layout_constraintStart_toEndOf="@+id/spinnerPayViaCreditTripDateFromMonth"
+                app:layout_constraintTop_toTopOf="@+id/spinnerPayViaCreditTripDateFromMonth" />
+
+            <Spinner
+                android:id="@+id/spinnerPayViaCreditTripDateToYear"
+                android:layout_width="102dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintBottom_toBottomOf="@+id/spinnerPayViaCreditTripDateToDay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/spinnerPayViaCreditTripDateToDay"
+                app:layout_constraintTop_toTopOf="@+id/spinnerPayViaCreditTripDateToDay" />
+
+            <EditText
+                android:id="@+id/payViaCreditMobileNumber"
+                android:layout_width="370dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView87"
+                app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="G-Cash Pay"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/payViaCredit_AttachButton"
+                app:layout_constraintTop_toTopOf="@+id/payViaCredit_AttachButton" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Distination : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/spinnerPayViaCreditTripDateToMonth"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerPayViaCreditTripDateToMonth" />
+
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Region"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/textView57"
+                app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+            <TextView
+                android:id="@+id/textView133"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Province"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView132"
+                app:layout_constraintStart_toEndOf="@+id/textView132"
+                app:layout_constraintTop_toTopOf="@+id/textView132"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:text="Municipality"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView133"
+                app:layout_constraintStart_toEndOf="@+id/textView133"
+                app:layout_constraintTop_toTopOf="@+id/textView133"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/payViaCreditAmount"
+                android:layout_width="370dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Amount"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/payViaCreditMobileNumber"
+                app:layout_constraintTop_toBottomOf="@+id/payViaCreditMobileNumber" />
+
+            <Button
+                android:id="@+id/payViaCreditContinueButton"
+                android:layout_width="218dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="#f54343"
+                android:text="Continue"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/payViaCreditAmount"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView130"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Number of Hours : "
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/textView91"
+                app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+            <Spinner
+                android:id="@+id/payViaCredit_PerHour_Spinner"
+                android:layout_width="179dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintBottom_toBottomOf="@+id/textView130"
+                app:layout_constraintStart_toEndOf="@+id/textView130"
+                app:layout_constraintTop_toTopOf="@+id/textView130" />
+
+            <TextView
+                android:id="@+id/textView131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Please Attach your License here : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView132"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerPayViaCreditTripProvince_spinner" />
+
+            <Button
+                android:id="@+id/payViaCredit_AttachButton"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/approved_color"
+                android:text="Attach File Here"
+                app:layout_constraintEnd_toEndOf="@+id/textView131"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView131"
+                app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+            <TextView
+                android:id="@+id/providedDriverTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="260dp"
+                android:layout_marginEnd="30dp"
+                android:text="Driver Provided By rental Company"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

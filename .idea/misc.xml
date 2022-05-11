@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Rent a Car App/New/Try 4/Try1/app/src/main/res/drawable/picture_rounded_border.xml" value="0.2942708333333333" />
+        <entry key="..\:/Rent a Car App/New/Try 4/Try1/app/src/main/res/layout/activity_car_num1.xml" value="0.25" />
+        <entry key="..\:/Rent a Car App/New/Try 4/Try1/app/src/main/res/layout/activity_car_num2.xml" value="0.7096247960848288" />
+        <entry key="..\:/Rent a Car App/New/Try 4/Try1/app/src/main/res/layout/activity_car_num3.xml" value="0.67" />
+        <entry key="..\:/Rent a Car App/New/Try 4/Try1/app/src/main/res/layout/app_bar_client_dashboard.xml" value="0.25407608695652173" />
+        <entry key="..\:/Rent a Car App/New/Try 4/Try1/app/src/main/res/layout/business_owner_dashboard.xml" value="0.25407608695652173" />
+        <entry key="..\:/Rent a Car App/New/Try 4/Try1/app/src/main/res/layout/fragment_home.xml" value="0.25407608695652173" />
+        <entry key="..\:/Rent a Car App/New/Try 4/Try1/app/src/main/res/menu/business_owner_dash_board.xml" value="0.278125" />
+        <entry key="..\:/Rent a Car App/New/Try1/app/src/main/res/drawable/input_styles.xml" value="0.2942708333333333" />
+        <entry key="..\:/Rent a Car App/New/Try1/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Rent a Car App/New/Try1/app/src/main/res/layout/business_owner_signup.xml" value="0.278125" />
+        <entry key="..\:/Rent a Car App/New/Try1/app/src/main/res/layout/login.xml" value="0.278125" />
+        <entry key="..\:/Rent a Car App/New/Try1/app/src/main/res/layout/login_options.xml" value="0.33" />
+        <entry key="..\:/Rent a Car App/New/Try1/app/src/main/res/layout/signup_client.xml" value="0.33" />
+        <entry key="..\:/Rent a Car App/New/Try1/app/src/main/res/layout/signup_options.xml" value="0.278125" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/drawable/frame_layout_style.xml" value="0.2942708333333333" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/app_bar_client_dashboard.xml" value="0.2758152173913043" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/contact_and_support_fragment.xml" value="0.278125" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/content_client_dashboard.xml" value="0.278125" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/fragment_about_us.xml" value="0.2717391304347826" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/fragment_faq.xml" value="0.2717391304347826" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/fragment_gallery.xml" value="0.4152410575427683" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/fragment_slideshow.xml" value="0.26313405797101447" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/fragment_terms_and_conditions.xml" value="0.2717391304347826" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/login.xml" value="0.278125" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/layout/nav_header_client_dashboard.xml" value="0.2758152173913043" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/menu/activity_main_drawer.xml" value="0.278125" />
+        <entry key="..\:/Rent a Car App/New/try3/Try1/app/src/main/res/menu/client_dashboard.xml" value="0.278125" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/activity_add_cars.xml" value="0.3504043126684636" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/activity_confirm_booking.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/activity_delete_cars.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/activity_main.xml" value="0.14114583333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/activity_manage_cars.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/business_owner_dashboard.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/business_owner_profile.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/confirm_add_car.xml" value="0.38095238095238093" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/edit_profile_page.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/fragment_home.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/logout_pop_up.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/my_company_cars_row.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/my_row_client_dashboard.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/my_row_delete_cars.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/my_row_outgoing_transactions.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/view_car_details.xml" value="0.140625" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/view_outgoing_booking.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/view_outgoing_transaction_details.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/CarFinder6/app/src/main/res/layout/view_policies.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/drawable/reports_frame_layout_styles.xml" value="0.2869791666666667" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/activity_client_dashboard.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/activity_pay_via_credit_page.xml" value="0.33" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/business_owner_dashboard.xml" value="0.2742914979757085" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/business_owner_reports.xml" value="0.3492268041237113" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/cancel_booking_promp.xml" value="0.2105978260869565" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/cancel_reasons.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/check_booking_status.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/my_row_client_dashboard.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/my_row_for_reports.xml" value="0.33" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/review_booking_data.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/view_booking_details.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/view_outgoing_transaction_details.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/view_policies.xml" value="0.33" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/view_report_details.xml" value="0.5" />
+        <entry key="..\:/Users/BEB_ONG/Desktop/TryTesting/app/src/main/res/layout/without_driver_terms_and_agreement.xml" value="0.12837517764092846" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCarDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/viewCarDetails_carID_holder_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/viewCarDetails_CarPhoto"
+                android:layout_width="354dp"
+                android:layout_height="204dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cardview_style"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/carphotonotavailable" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@+id/viewCarDetails_CarPhoto"
+                app:layout_constraintTop_toBottomOf="@+id/viewCarDetails_CarPhoto"
+                app:srcCompat="@drawable/companypicturenotavailable" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CompanyName_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Company Name Here"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+                app:layout_constraintStart_toEndOf="@+id/imageView24"
+                app:layout_constraintTop_toTopOf="@+id/imageView24"
+                app:layout_constraintVertical_bias="0.24000001" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CompanyAddress_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/viewCompanyDetails_CompanyName_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CompanyName_TextView" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CompanyEmail_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/viewCompanyDetails_CompanyAddress_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CompanyAddress_TextView" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CompanyContactNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/viewCompanyDetails_CompanyEmail_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CompanyEmail_TextView" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CompanyDTINumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/viewCompanyDetails_CompanyContactNumber_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CompanyContactNumber_TextView" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CompanyMayorPermitNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/viewCompanyDetails_CompanyDTINumber_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CompanyDTINumber_TextView" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CompanyBIRNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/viewCompanyDetails_CompanyMayorPermitNumber_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CompanyMayorPermitNumber_TextView" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CompanyPGNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@+id/viewCompanyDetails_CompanyBIRNumber_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CompanyBIRNumber_TextView" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="200dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView24"
+                app:layout_constraintTop_toBottomOf="@+id/imageView24"
+                app:srcCompat="@drawable/payment_car" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView25"
+                app:layout_constraintTop_toBottomOf="@+id/imageView25"
+                app:srcCompat="@drawable/peso_ic" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView26"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26"
+                app:srcCompat="@drawable/passenger_ic" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+
+                app:layout_constraintStart_toStartOf="@+id/imageView28"
+                app:layout_constraintTop_toBottomOf="@+id/imageView28"
+                app:srcCompat="@drawable/gears_ic" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView29"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29"
+                app:srcCompat="@drawable/doors_ic" />
+
+            <ImageView
+                android:id="@+id/imageView61"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView30"
+                app:layout_constraintTop_toBottomOf="@+id/imageView30"
+                app:srcCompat="@drawable/gastype" />
+
+            <ImageView
+                android:id="@+id/imageView63"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView61"
+                app:layout_constraintTop_toBottomOf="@+id/imageView61"
+                app:srcCompat="@drawable/platenumber" />
+
+            <ImageView
+                android:id="@+id/imageView66"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView61"
+                app:layout_constraintTop_toBottomOf="@+id/imageView63"
+                app:srcCompat="@drawable/black_star_ic" />
+
+            <ImageView
+                android:id="@+id/imageView69"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView61"
+                app:layout_constraintTop_toBottomOf="@+id/imageView66"
+                app:srcCompat="@drawable/booked_ic" />
+
+            <Button
+                android:id="@+id/viewCarDetails_ProceedButton"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1010dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/primary_color"
+                android:text="Proceed Booking"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:text="Insurance Details"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/imageView30"
+                app:layout_constraintTop_toBottomOf="@+id/imageView63" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pickup and Return Address"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/ViewCompanyDetails_CompanyNameInsured_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/ViewCompanyDetails_CompanyNameInsured_TextView" />
+
+            <TextView
+                android:id="@+id/ViewCompanyDetails_CompanyNameInsured_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Insurance Details"
+                android:textColor="#000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CarPickUpAndReturn_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insurance Details"
+                android:textColor="#000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/textView32"
+
+                tools:layout_editor_absoluteX="252dp"
+                tools:layout_editor_absoluteY="670dp" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CarName_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+                app:layout_constraintStart_toEndOf="@+id/imageView25"
+                app:layout_constraintTop_toTopOf="@+id/imageView25" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CarPrice_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+                app:layout_constraintStart_toEndOf="@+id/imageView26"
+                app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+            <TextView
+                android:id="@+id/ViewCompanyDetails_CarCapacity_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+                app:layout_constraintStart_toEndOf="@+id/imageView28"
+                app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CarEngine_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+                app:layout_constraintStart_toEndOf="@+id/imageView29"
+                app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CarDoors_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView30"
+                app:layout_constraintStart_toEndOf="@+id/imageView30"
+                app:layout_constraintTop_toTopOf="@+id/imageView30" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_CarGasType_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView61"
+                app:layout_constraintStart_toEndOf="@+id/imageView61"
+                app:layout_constraintTop_toTopOf="@+id/imageView61" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_PlateNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView63"
+                app:layout_constraintStart_toEndOf="@+id/imageView63"
+                app:layout_constraintTop_toTopOf="@+id/imageView63" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_Rating_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView66"
+                app:layout_constraintStart_toEndOf="@+id/imageView66"
+                app:layout_constraintTop_toTopOf="@+id/imageView66" />
+
+            <TextView
+                android:id="@+id/viewCompanyDetails_BookedCount_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Name"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView69"
+                app:layout_constraintStart_toEndOf="@+id/imageView69"
+                app:layout_constraintTop_toTopOf="@+id/imageView69" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

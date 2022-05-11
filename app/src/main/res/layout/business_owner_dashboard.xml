@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_background_theme_neutralizer"
+    tools:context=".BusinessOwnerDashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="103dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_name" />
+
+            <TextView
+                android:id="@+id/logoutTextView"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="Logout"
+                android:textColor="#000"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.953"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.024" />
+
+            <TextView
+                android:id="@+id/businessOwnerName_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:onClick="openBusinessOwnerProfile"
+                android:text="Car Rental Company Name"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/businessOwnerDashboard_logo"
+                app:layout_constraintStart_toEndOf="@+id/businessOwnerDashboard_logo"
+                app:layout_constraintTop_toTopOf="@+id/businessOwnerDashboard_logo" />
+
+            <TextView
+                android:id="@+id/businessOwner_AddressTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G-pepito St. Poblacion Valencia City Bukidnon"
+                android:textColor="#000"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/businessOwnerName_textView"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerName_textView" />
+
+            <ImageView
+                android:id="@+id/businessOwnerDashboard_logo"
+                android:layout_width="69dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:onClick="openBusinessOwnerProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.011"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:srcCompat="@drawable/companypicturenotavailable" />
+
+            <FrameLayout
+                android:layout_width="121dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="196dp"
+                android:background="@drawable/business_owner_rounded"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.227"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/onGoingRentedCount_TV"
+                        android:layout_width="87dp"
+                        android:layout_height="53dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.703" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ongoing Rented Cars"
+                        android:textColor="#fff"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.492"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.175" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="121dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="196dp"
+                android:background="@drawable/business_owner_rounded"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.806"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/onGoingPendingBookingCount_TV"
+                        android:layout_width="87dp"
+                        android:layout_height="53dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.703" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.175" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/manageCars_BTN"
+                android:layout_width="346dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="320dp"
+                android:backgroundTint="#f54343"
+                android:text="Manage Cars"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/confirmBooking_BTN"
+                android:layout_width="346dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#f54343"
+                android:text="Manage Booking"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/manageCars_BTN" />
+
+            <Button
+                android:id="@+id/businessOwnerDashboard_MyRentalPolicies_BTN"
+                android:layout_width="346dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#f54343"
+                android:text="My Rental Policies"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confirmBooking_BTN" />
+
+            <Button
+                android:id="@+id/bookingHistory_BTN"
+                android:layout_width="346dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1100dp"
+                android:backgroundTint="#f54343"
+                android:text="show more cars"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/businessOwnerDashboard_Reports_BTN"
+                android:layout_width="346dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#f54343"
+                android:text="Reports"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerDashboard_MyRentalPolicies_BTN" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="50dp"
+                android:text="MY CARS DISPLAY"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.117"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerDashboard_Reports_BTN" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewManageCarsPage"
+                android:layout_width="392dp"
+                android:layout_height="484dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView42"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewBookingData">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/booking_review_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Renter Email"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_age" />
+
+            <TextView
+                android:id="@+id/booking_review_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Renter Mobile Number"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_email" />
+
+            <TextView
+                android:id="@+id/booking_review_car_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Car Price"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_car_name" />
+
+            <TextView
+                android:id="@+id/booking_review_booking_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Booking Status"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_mobile_number" />
+
+            <TextView
+                android:id="@+id/booking_review_car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Car Name Here"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_booking_status" />
+
+            <TextView
+                android:id="@+id/booking_review_trip_date_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Trip Date From"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_car_price" />
+
+            <TextView
+                android:id="@+id/booking_review_trip_date_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Trip Date To"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_trip_date_from" />
+
+            <TextView
+                android:id="@+id/booking_review_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Payment Method"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_trip_routes" />
+
+            <TextView
+                android:id="@+id/booking_review_g_cash_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="G-Cash Number"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_payment_method" />
+
+            <TextView
+                android:id="@+id/booking_review_car_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Car Amount"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_g_cash_number" />
+
+            <TextView
+                android:id="@+id/booking_review_trip_routes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Trip Routes"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_trip_date_to" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="103dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_name" />
+
+            <ImageView
+                android:id="@+id/imageView58"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:srcCompat="@drawable/profile_ic" />
+
+            <TextView
+                android:id="@+id/booking_review_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:text="Renter Name Here"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView58" />
+
+            <TextView
+                android:id="@+id/booking_review_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Renter Address"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_fullname" />
+
+            <TextView
+                android:id="@+id/booking_review_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Age"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_address" />
+
+            <Button
+                android:id="@+id/booking_review_approve_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="800dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/primary_color"
+                android:text="Approve"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/booking_review_decline_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="800dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/primary_color"
+                android:text="Decline"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/booking_review_days_granted_ET"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Enter Number of Days Granted"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_review_car_amount" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

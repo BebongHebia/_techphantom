@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_background_theme_neutralizer"
+    tools:context=".AddCars">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="103dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_name" />
+
+            <TextView
+                android:id="@+id/deleteCars_CompanyName_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Car Rental Company Name"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/businessOwnerDashboard_logo"
+                app:layout_constraintStart_toEndOf="@+id/businessOwnerDashboard_logo"
+                app:layout_constraintTop_toTopOf="@+id/businessOwnerDashboard_logo" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="ADD CARS"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/businessOwnerDashboard_logo"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerDashboard_logo" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="66dp"
+                android:text="Select Vehicle Type"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/businessOwnerDashboard_logo"
+                app:layout_constraintTop_toBottomOf="@+id/businessOwnerDashboard_logo" />
+
+            <TextView
+                android:id="@+id/deleteCars_CompanyAddress_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G-pepito St. Poblacion Valencia City Bukidnon"
+                android:textColor="#000"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/deleteCars_CompanyName_TV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/deleteCars_CompanyName_TV"
+                app:layout_constraintTop_toBottomOf="@+id/deleteCars_CompanyName_TV" />
+
+            <ImageView
+                android:id="@+id/businessOwnerDashboard_logo"
+                android:layout_width="69dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:srcCompat="@drawable/companypicturenotavailable" />
+
+            <EditText
+                android:id="@+id/addCars_CarModelName_ET"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Car Model Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/addCars_carType_spinners"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_carType_spinners" />
+
+            <EditText
+                android:id="@+id/addCars_CarPrice_ET"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Car Price"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_CarModelName_ET"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/addCars_CarModelName_ET"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_CarModelName_ET" />
+
+            <EditText
+                android:id="@+id/addCars_CarCapacity_ET"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Car Capacity"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_CarPrice_ET"
+                app:layout_constraintStart_toStartOf="@+id/addCars_CarPrice_ET"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_CarPrice_ET" />
+
+            <EditText
+                android:id="@+id/addCars_CarPrice_ET3"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Car Doors"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_carEngine_spinners"
+                app:layout_constraintStart_toStartOf="@+id/addCars_carEngine_spinners"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_carEngine_spinners" />
+
+            <EditText
+                android:id="@+id/addCars_CarPlateNumber_ET"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Car Plate No."
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_gasType_spinners"
+                app:layout_constraintStart_toStartOf="@+id/addCars_gasType_spinners"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_gasType_spinners" />
+
+            <EditText
+                android:id="@+id/addCars_DriverName_ET"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Driver Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView44"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <EditText
+                android:id="@+id/addCars_DriverAddress_ET"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Driver Address"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_DriverName_ET"
+                app:layout_constraintStart_toStartOf="@+id/addCars_DriverName_ET"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_DriverName_ET" />
+
+            <EditText
+                android:id="@+id/addCars_DriverContactNumber_ET"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Driver Contact No."
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_DriverAddress_ET"
+                app:layout_constraintStart_toStartOf="@+id/addCars_DriverAddress_ET"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_DriverAddress_ET" />
+
+            <EditText
+                android:id="@+id/addCars_DriverLicenseNumber_ET"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                android:ems="10"
+                android:hint="Driver License No."
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_DriverContactNumber_ET"
+                app:layout_constraintStart_toStartOf="@+id/addCars_DriverContactNumber_ET"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_DriverContactNumber_ET" />
+
+            <Spinner
+                android:id="@+id/addCars_carEngine_spinners"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_CarCapacity_ET"
+                app:layout_constraintStart_toStartOf="@+id/textView37"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <Spinner
+                android:id="@+id/addCars_carType_spinners"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView45"
+                app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+            <Spinner
+                android:id="@+id/addCars_gasType_spinners"
+                android:layout_width="357dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_styles"
+                app:layout_constraintEnd_toEndOf="@+id/addCars_CarPrice_ET3"
+                app:layout_constraintStart_toStartOf="@+id/textView43"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+            <Button
+                android:id="@+id/addDriverButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/approved_color"
+                android:text="Add Driver on this Car"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_CarPlateNumber_ET"
+                tools:layout_editor_absoluteX="24dp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select Engine Type : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/addCars_CarCapacity_ET"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_CarCapacity_ET" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gasoline Type : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/addCars_CarPrice_ET3"
+                app:layout_constraintTop_toBottomOf="@+id/addCars_CarPrice_ET3" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Add Driver Details"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/addDriverButton"
+                app:layout_constraintTop_toBottomOf="@+id/addDriverButton" />
+
+            <Button
+                android:id="@+id/addCars_addCarNow_Button"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="1050dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/primary_color"
+                android:text="Add Car Now"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.305" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

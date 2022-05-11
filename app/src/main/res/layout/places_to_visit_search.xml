@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacesToVisitSearch">
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="121dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_name" />
+
+    <TextView
+        android:id="@+id/textView141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Places you can visit"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView65"
+        app:layout_constraintTop_toBottomOf="@+id/imageView65" />
+
+    <Spinner
+        android:id="@+id/selectPlacesSpinner"
+        android:layout_width="383dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_styles"
+        app:layout_constraintStart_toStartOf="@+id/textView141"
+        app:layout_constraintTop_toBottomOf="@+id/textView141" />
+
+    <TextView
+        android:id="@+id/textView151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Select Municipality/City"
+        android:textColor="#000"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectPlacesSpinner"
+        app:layout_constraintStart_toStartOf="@+id/selectPlacesSpinner" />
+
+    <Button
+        android:id="@+id/searchPlaceButton"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Search"
+        android:backgroundTint="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="@+id/selectPlacesSpinner"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/selectPlacesSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/selectPlacesSpinner" />
+
+    <ImageView
+        android:id="@+id/imageMap"
+        android:layout_width="392dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/cardview_style"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/selectPlacesSpinner"
+        app:layout_constraintStart_toStartOf="@+id/selectPlacesSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/searchPlaceButton"
+        app:srcCompat="@drawable/malaybalay_map" />
+
+    <Button
+        android:id="@+id/findPlacesFindCarNow"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Find Car Now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMap" />
+
+    <TextView
+        android:id="@+id/mapShow_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Map Show"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+</androidx.constraintlayout.widget.ConstraintLayout>

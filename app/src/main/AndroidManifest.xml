@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cafinder">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CaFinder.NoActionBar">
+        <activity
+            android:name=".ViewReportDetails"
+            android:exported="true" />
+        <activity
+            android:name=".BusinessOwnerReports"
+            android:exported="true" />
+        <activity
+            android:name=".CancelBookingPromp"
+            android:exported="true" />
+        <activity
+            android:name=".CancelReasons"
+            android:exported="true" />
+        <activity
+            android:name=".ViewPolicies"
+            android:exported="true" />
+        <activity
+            android:name=".LogoutPopUp"
+            android:exported="true" />
+        <activity
+            android:name=".BusinessOwnerProfile"
+            android:exported="true" />
+        <activity
+            android:name=".CarRatingPage"
+            android:exported="true" />
+        <activity
+            android:name=".PlacesToVisitSearch"
+            android:exported="true" />
+        <activity
+            android:name=".ClientSignupCompletePopUp"
+            android:exported="true" />
+        <activity
+            android:name=".BusinessOwnerSignupSuccessfulPopUp"
+            android:exported="true" />
+        <activity
+            android:name=".AddingCarSuccessfullPopUp"
+            android:exported="true" />
+        <activity
+            android:name=".WithoutDriverTermsAndAgreement"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPasswordPanel"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmDeleteTransaction"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmReturnCar"
+            android:exported="true" />
+        <activity
+            android:name=".ExpireNotification"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmRequestReturn"
+            android:exported="true" />
+        <activity
+            android:name=".ViewOutgoingTransactionDetails"
+            android:exported="true" />
+        <activity
+            android:name=".ViewOutgoingBooking"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmPickupPopUp"
+            android:exported="true" />
+        <activity
+            android:name=".ReasonsOfDisapproval"
+            android:exported="false" />
+        <activity
+            android:name=".ActionSuccessFulPopUp"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBookingDetails"
+            android:exported="false" />
+        <activity
+            android:name=".CheckBookingStatus"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCarDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmDeleteCars"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmAddCar"
+            android:exported="false" />
+        <activity
+            android:name=".UpdatingPassword"
+            android:exported="false" />
+        <activity
+            android:name=".UpdatingProfileSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".UpdatingProfileError"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfilePage"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".ReviewBookingData"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".FindCarResults"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".NeedToLoginSignupFirst"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".DashboardNoAccount"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".ConfirmBooking"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".PayViaCreditBookingSuccessfulPopUp"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".PayViaCreditReview"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".PayViaCounterPopUpSuccess"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".PaymentViaCounterReview"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".PayViaCreditPage"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".PayViaCounterPage"
+            android:exported="false"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".PaymentOption"
+            android:exported="true"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".FindCarPopUpKey"
+            android:exported="true"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".AddCars"
+            android:exported="true"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".DeleteCars"
+            android:exported="true"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".ManageCars"
+            android:exported="true"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".BusinessOwnerDashboard"
+            android:exported="true"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".ClientDashboard"
+            android:exported="true"
+            android:label="@string/title_activity_client_dashboard"
+            android:theme="@style/Theme.CaFinder.NoActionBar" />
+        <activity
+            android:name=".BusinessOwnerSignupActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".SignupClientActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".SignupOptionsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".LoginOptions"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
