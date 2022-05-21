@@ -8,6 +8,7 @@
 
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -220,7 +221,7 @@
                 android:id="@+id/viewCarDetails_ProceedButton"
                 android:layout_width="357dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="1010dp"
+                android:layout_marginTop="500dp"
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="@color/primary_color"
                 android:text="Proceed Booking"
@@ -228,7 +229,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CarPickUpAndReturn_textView"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView30"
@@ -255,6 +257,18 @@
                 app:layout_constraintTop_toBottomOf="@+id/ViewCompanyDetails_CompanyNameInsured_TextView" />
 
             <TextView
+                android:id="@+id/textView170"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Reviews"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/ViewCompanyDetails_CompanyNameInsured_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/viewCompanyDetails_CarPickUpAndReturn_textView" />
+
+            <TextView
                 android:id="@+id/ViewCompanyDetails_CompanyNameInsured_TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -275,8 +289,7 @@
                 app:layout_constraintStart_toStartOf="@+id/textView32"
                 app:layout_constraintTop_toBottomOf="@+id/textView32"
 
-                tools:layout_editor_absoluteX="252dp"
-                tools:layout_editor_absoluteY="670dp" />
+                />
 
             <TextView
                 android:id="@+id/viewCompanyDetails_CarName_TextView"
@@ -394,6 +407,21 @@
                 app:layout_constraintBottom_toBottomOf="@+id/imageView69"
                 app:layout_constraintStart_toEndOf="@+id/imageView69"
                 app:layout_constraintTop_toTopOf="@+id/imageView69" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewCarDetails_CommentRecyclerView"
+                android:layout_width="348dp"
+                android:layout_height="375dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/viewCarDetails_ProceedButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView170"
+                app:layout_constraintTop_toBottomOf="@+id/textView170"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

@@ -116,9 +116,18 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String OUTGOING_TRANSACTION_BOOKING_ID = "transaction_booking_id";
 
 
+    //Comment Table
+    private static final String COMMENT_TABLE = "comment_table";
+    private static final String COMMENT_ID = "comment_id";
+    private static final String COMMENT_CLIENT_ID = "comment_client_id";
+    private static final String COMMENT_CAR_ID = "comment_car_id";
+    private static final String COMMENT_CAR_NAME = "comment_car_name";
+    private static final String COMMENT_CLIENT_NAME = "comment_client_name";
+    private static final String COMMENT = "comment";
+
+
 
     //History Table
-
 
     private static final String HISTORY_BOOKING_TABLE = "history_Table";
     private static final String HISTORY_ID = "history_history_id";
@@ -190,6 +199,16 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
                         BUSINESS_PHONE_NUMBER + " TEXT, " +
                         BUSINESS_PASSWORD + " TEXT);";
 
+
+        String comment_table =
+                "CREATE TABLE " + COMMENT_TABLE +
+                        " (" + COMMENT_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                        COMMENT_CLIENT_ID + " TEXT, " +
+                        COMMENT_CAR_ID + " TEXT, " +
+                        COMMENT_CAR_NAME + " TEXT, " +
+                        COMMENT_CLIENT_NAME + " TEXT, " +
+                        COMMENT + " TEXT);";
+
         String booking_query =
                 "CREATE TABLE " + BOOKING_TABLE +
                         " (" + BOOKING_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
@@ -239,8 +258,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
                         DRIVER_ADDRESS + " TEXT, " +
                         DRIVER_CONTACT + " TEXT, " +
                         DRIVER_LICENSE + " TEXT, " +
-                        CAR_ENGINE + " TEXT, " +
                         CAR_PHOTO + " BLOB, " +
+                        CAR_ENGINE + " TEXT, " +
                         CAR_DOORS_COUNT + " TEXT);";
 
         String transaction_ongoing_query =
@@ -296,6 +315,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(transaction_ongoing_query);
 
         db.execSQL(history_query);
+        db.execSQL(comment_table);
 
     }
 
@@ -307,6 +327,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + CAR_TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + OUTGOING_TRANSACTION_TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + HISTORY_BOOKING_TABLE);
+        db.execSQL("DROP TABLE IF EXISTS " + COMMENT_TABLE);
+
         onCreate(db);
     }
 
@@ -2177,6 +2199,19 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return stringBuilder;
     }
 
+    public StringBuilder getForgotPassword_companyPhoneNumber(String phoneNumber){
+
+        SQLiteDatabase myDB = this.getWritableDatabase();
+        Cursor cursor = myDB.rawQuery("SELECT businessOwnerEmail FROM businessOwnerTable WHERE businessOwnerEmail = '" + phoneNumber + "'", null);
+
+        StringBuilder stringBuilder = new StringBuilder();
+        while(cursor.moveToNext()){
+            int nameField = cursor.getColumnIndex("businessOwnerEmail");
+            stringBuilder.append(cursor.getString(nameField));
+        }
+        return stringBuilder;
+    }
+
     public StringBuilder getForgotPassword_clientID(String clientEmail){
 
         SQLiteDatabase myDB = this.getWritableDatabase();
@@ -2190,6 +2225,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return stringBuilder;
     }
 
+
+
     boolean forgotPassword_ChangeClientPassword(String clientID,
                                                 String clientPassword){
 
@@ -2201,6 +2238,21 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         db.update(CLIENT_TABLE_NAME,  cv, "client_id=?", new String[]{clientID});
         return true;
     }
+
+
+    boolean forgotPassword_ChangeCompanyPassword(String companyEmail,
+                                                String companyPassword){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(BUSINESS_PASSWORD, companyPassword);
+
+        db.update(BUSINESS_OWNER_TABLE,  cv, "businessOwnerEmail=?", new String[]{companyEmail});
+        return true;
+    }
+
+
 
     public boolean checkClient_Routes(String phoneNumber, String passwords){
         SQLiteDatabase myDB = this.getWritableDatabase();
@@ -3021,7 +3073,6 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
         return stringBuilder;
     }
-
     public StringBuilder reportsBookingDateBooked(String bookingID){
 
         SQLiteDatabase myDB = this.getWritableDatabase();
@@ -3037,7 +3088,39 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
 
 
+     boolean addComment(String clientID, String carID, String carName, String clientName, String comment){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
 
+        cv.put(COMMENT_CLIENT_ID, clientID);
+        cv.put(COMMENT_CAR_ID, carID);
+        cv.put(COMMENT_CAR_NAME, carName);
+        cv.put(COMMENT_CLIENT_NAME, clientName);
+        cv.put(COMMENT, comment);
+
+        long result = db.insert(COMMENT_TABLE, null, cv);
+        if (result == -1){
+            Toast.makeText(context, "Create Account Failed", Toast.LENGTH_SHORT).show();
+            return false;
+        }else{
+            Toast.makeText(context, "Create Account Completed", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+    }
+
+
+
+    public Cursor readAllDataFromCommentTable(String carID){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null){
+            cursor = db.rawQuery("SELECT * FROM comment_table WHERE comment_car_id = '" + carID + "'", null);
+        }
+        return cursor;
+    }
 
 
 

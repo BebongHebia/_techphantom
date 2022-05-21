@@ -1,8 +1,11 @@
 package com.example.cafinder;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -11,6 +14,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class ViewCarDetails extends AppCompatActivity {
     public static final String EXTRA_TEXT_CAR_ID = "com.example.cedula.example.EXTRA_TEXT_CAR_ID";
@@ -42,6 +47,8 @@ public class ViewCarDetails extends AppCompatActivity {
             viewCompanyDetails_CarEngine_TextView_String, viewCompanyDetails_CarDoors_TextView_String, viewCompanyDetails_CompanyNameInsured_TextView_String,
             viewCompanyDetails_CarPickUpAndReturn_textView_String, companyID, bookerID;
 
+
+
     String passValue_CarID, passValue_CarName, passValue_CarPrice, passValue_CompanyID, passValue_CompanyAddress, passValue_CompanyName;
 
     Button viewCarDetails_ProceedButton;
@@ -50,11 +57,42 @@ public class ViewCarDetails extends AppCompatActivity {
     ImageView viewCarDetails_CarPhoto;
 
 
+    RecyclerView viewCarDetails_CommentRecyclerView;
+    ArrayList<String> fullname, comment;
+
+    CustomAdapterForComment customAdapterForComment;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_car_details);
+
         viewCarDetails_carID_holder_TV = findViewById(R.id.viewCarDetails_carID_holder_TV);
+
+        viewCarDetails_CommentRecyclerView = findViewById(R.id.viewCarDetails_CommentRecyclerView);
+
+        fullname = new ArrayList<>();
+        comment = new ArrayList<>();
+
+        displayData();
+
+        customAdapterForComment = new CustomAdapterForComment(ViewCarDetails.this, fullname, comment);
+        viewCarDetails_CommentRecyclerView.setAdapter(customAdapterForComment);
+        viewCarDetails_CommentRecyclerView.setLayoutManager(new LinearLayoutManager(ViewCarDetails.this));
+
+
+
+
+
+
+
+
+
+
+
 
         String carID = "Car ID not Set";
 
@@ -209,6 +247,19 @@ public class ViewCarDetails extends AppCompatActivity {
 
         finish();
 
+    }
 
+    public void displayData(){
+        Cursor cursor = myDB.readAllDataFromCommentTable(car_ID);
+        if (cursor.getCount() == 0){
+            Toast.makeText(this, "No Comment", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            while (cursor.moveToNext() ){
+                fullname.add(cursor.getString(4));
+                comment.add(cursor.getString(5));
+
+            }
+        }
     }
 }

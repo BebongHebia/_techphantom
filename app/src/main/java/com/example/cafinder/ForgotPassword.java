@@ -16,7 +16,7 @@ public class ForgotPassword extends AppCompatActivity {
 
     MyDatabaseHelper myDB = new MyDatabaseHelper(ForgotPassword.this);
 
-    String myInputEmail, myDatabaseEmail, myDatabaseID, myNewPassword;
+    String myInputEmail, myDatabaseEmail, myDatabaseID, myNewPassword, myDatabaseBusinessOwnerPhone;
     TextView textView124;
     EditText forgotPassword_NewPassword_ET, forgotPassword_Email_ET;
     @Override
@@ -38,6 +38,7 @@ public class ForgotPassword extends AppCompatActivity {
 
                 myInputEmail = forgotPassword_Email_ET.getText().toString();
                 myDatabaseEmail = myDB.getForgotPassword_clientEmail(myInputEmail).toString();
+                myDatabaseBusinessOwnerPhone = myDB.getForgotPassword_companyPhoneNumber(myInputEmail).toString();
                 myDatabaseID = myDB.getForgotPassword_clientID(myDatabaseEmail).toString();
                 if (myInputEmail.equals("")){
                     Toast.makeText(ForgotPassword.this, "Please Enter Email", Toast.LENGTH_SHORT).show();
@@ -45,7 +46,12 @@ public class ForgotPassword extends AppCompatActivity {
                 else if (myInputEmail.equals(myDatabaseEmail)){
                     textView124.setVisibility(View.VISIBLE);
                     forgotPassword_NewPassword_ET.setVisibility(View.VISIBLE);
-                }else{
+                }
+                else if( myInputEmail.equals(myDatabaseBusinessOwnerPhone)){
+                    textView124.setVisibility(View.VISIBLE);
+                    forgotPassword_NewPassword_ET.setVisibility(View.VISIBLE);
+                }
+                else{
                     Toast.makeText(ForgotPassword.this, "Sorry we didn't recognize your Account Try Contact Admin Support", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -58,8 +64,8 @@ public class ForgotPassword extends AppCompatActivity {
                 myDatabaseID = myDB.getForgotPassword_clientID(myDatabaseEmail).toString();
                 myNewPassword = forgotPassword_NewPassword_ET.getText().toString();
                 boolean myStatus = myDB.forgotPassword_ChangeClientPassword(myDatabaseID, myNewPassword);
-
-                if (myStatus == true){
+                boolean myCompanyChangePass = myDB.forgotPassword_ChangeCompanyPassword(myDatabaseBusinessOwnerPhone, myNewPassword);
+                if (myStatus == true || myCompanyChangePass == true){
                     openForgotPasswordSuccess();
                 }
                 else{
