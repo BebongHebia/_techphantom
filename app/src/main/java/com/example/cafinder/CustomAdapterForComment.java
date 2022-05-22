@@ -28,7 +28,7 @@ public class CustomAdapterForComment extends RecyclerView.Adapter<CustomAdapterF
     @Override
     public MyViewHolderComment onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.my_row_client_dashboard, parent,false);
+        View view = inflater.inflate(R.layout.my_row_comment, parent,false);
         return new CustomAdapterForComment.MyViewHolderComment(view);
     }
 

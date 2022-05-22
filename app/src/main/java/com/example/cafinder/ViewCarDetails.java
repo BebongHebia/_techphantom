@@ -52,7 +52,7 @@ public class ViewCarDetails extends AppCompatActivity {
     String passValue_CarID, passValue_CarName, passValue_CarPrice, passValue_CompanyID, passValue_CompanyAddress, passValue_CompanyName;
 
     Button viewCarDetails_ProceedButton;
-    String car_ID;
+    String car_ID, carID;
 
     ImageView viewCarDetails_CarPhoto;
 
@@ -77,24 +77,14 @@ public class ViewCarDetails extends AppCompatActivity {
         fullname = new ArrayList<>();
         comment = new ArrayList<>();
 
-        displayData();
+        displayDataFromComment();
 
         customAdapterForComment = new CustomAdapterForComment(ViewCarDetails.this, fullname, comment);
         viewCarDetails_CommentRecyclerView.setAdapter(customAdapterForComment);
         viewCarDetails_CommentRecyclerView.setLayoutManager(new LinearLayoutManager(ViewCarDetails.this));
 
 
-
-
-
-
-
-
-
-
-
-
-        String carID = "Car ID not Set";
+        carID = "Car ID not Set";
 
         Bundle extras = getIntent().getExtras();
 
@@ -171,10 +161,8 @@ public class ViewCarDetails extends AppCompatActivity {
 
 
 
-        Bundle intent = getIntent().getExtras();
 
         bookerID = extras.getString("clientID");
-        Toast.makeText(this, bookerID, Toast.LENGTH_SHORT).show();
         car_ID = carID;
 
 
@@ -249,10 +237,13 @@ public class ViewCarDetails extends AppCompatActivity {
 
     }
 
-    public void displayData(){
-        Cursor cursor = myDB.readAllDataFromCommentTable(car_ID);
+    public void displayDataFromComment(){
+
+        Bundle extras = getIntent().getExtras();
+        String carid = extras.getString("carID");
+        Cursor cursor = myDB.readAllDataFromCommentTable(carid);
         if (cursor.getCount() == 0){
-            Toast.makeText(this, "No Comment", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, carid, Toast.LENGTH_SHORT).show();
         }
         else{
             while (cursor.moveToNext() ){
